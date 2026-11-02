@@ -67,6 +67,13 @@
 - Web Interface Guidelines review (sub-agent, Vercel guidelines) — fixed: white focus ring on navy surfaces, `prefers-reduced-motion` (CSS + JS scrolling), `scrollbar-gutter: stable` for dialog scroll-lock, visible focus ring on fields in every state, inline errors no longer `role=alert` storms, live re-validation only for fields that failed the last submit (checkout, lookup), first invalid field focused on search submit, backdrop close only when the press starts on the backdrop, persistent `role=status` in the location dialog, calendar roving tabindex + 44px month buttons, focus kept after "Bỏ chọn", payment option semantics (`aria-pressed` / `aria-haspopup`), `+84` phone normalisation, support dock only ≥1360px (FAB below, no content overlap) with footer bottom padding, `aria-current` in the mobile menu, `translate="no"` on the wordmark, decorative glyphs (→ ↗ □ ✓ ×) hidden from screen readers, call/Zalo requests routed to the real contact form (`/lien-he#loi-nhan`) instead of a fake confirmation.
 - Kept by design: footer/breadcrumb link sizes follow Figma (meet WCAG 2.2 target-size via spacing).
 
+## Repository & deployment
+
+- GitHub: https://github.com/hungnc-anvui/anvui-website-benxeyenso — branches `main` (default, production) and `develop` (integration). Flow: work on `develop` → merge into `main`.
+- Vercel project `hung-nc/anvui-website-benxeyenso` (Git integration connected): push to `main` → production, push to `develop` / PRs → preview deployments.
+- Production: https://anvui-website-benxeyenso.vercel.app (public; E2E booking flow verified on production at 375px).
+- Preview deployments are behind Vercel Authentication (team members only) — default Deployment Protection.
+
 ## Blockers
 
 - None. Hotline / Zalo OA numbers are intentionally not filled (unverified per handoff).
